@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Email API Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<style>
+body {
+	padding-top: 60px;
+	/* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Send Emails from HCP with
+					MailJet</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<!-- <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li> -->
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<form>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="fromaddress">From:</label> <input type="email"
+							class="form-control" id="fromaddress" placeholder="Email address">
+					</div>
+					<div class="form-group">
+						<label for="toaddress">To (comma-separated):</label> <input
+							type="text" class="form-control" id="toaddress"
+							placeholder="List of email addresses">
+					</div>
+					<div class="form-group">
+						<label for="subjecttext">Subject:</label> <input type="text"
+							class="form-control" id="subjecttext" placeholder="Subject text">
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-group">
+						<label for="mailtext">Mail Text:</label>
+						<textarea class="form-control" rows='5' cols='100' id='mailtext'
+							style="height: 182px">Mail Text</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<button class="btn btn-info" type="button" id="b_SMTP_SEND">Send
+							via SMTP</button>
+						<button class="btn btn-info" type="button" id="b_HTTP_SEND">Send
+							via HTTP</button>
+						<button class="btn btn-info" type="button" id="b_WRAPPER_SEND">Send
+							via HTTP using Mailjet Java wrapper</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<div class="alert alert-info" id="info_panel">
+							<button type="button" class="close" data-dismiss="alert">&times;</button>
+							<div>&nbsp;</div>
+						</div>
+						<div class="alert alert-warning" id="warning_panel">
+							<button type="button" class="close" data-dismiss="alert">&times;</button>
+							<div>&nbsp;</div>
+						</div>
+						<div class="alert alert-danger" id="danger_panel">
+							<button type="button" class="close" data-dismiss="alert">&times;</button>
+							<div>&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- /container -->
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="scripts/mailjet.js"></script>
+
+</body>
+</html>
