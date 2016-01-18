@@ -22,6 +22,8 @@ To demonstrate Mailjet's Event and Parse API, please fill in the missing informa
 
 Use Maven to build the project and then deploy it on HCP.
 
+For a detailed explanation of the code, please follow the [wiki](https://github.com/SAP/cloud-mail-mailjet/wiki). 
+
 ## Usage
 
 The application can be used to explore different capabilities of Mailjet: how you can send emails, how to get notifications on email-related events, and how Mailjet can be configured to parse and forward incoming emails for automated processing.
