@@ -1,3 +1,9 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+This public repository is read-only and no longer maintained.
+
+
 # Using Mailjet Email Service from HANA Cloud Platform
 
 This project should be used as a starting point for implementing HANA Cloud Platform (HCP) applications in Java using Mailjet's email service capabilities. It exemplifies the basic usage of Mailjet's APIs from an application deployed on HCP. 
